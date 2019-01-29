@@ -12,6 +12,8 @@
 		318165DE22004A8800FC79D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318165DC22004A8800FC79D9 /* Main.storyboard */; };
 		318165E022004A8A00FC79D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318165DF22004A8A00FC79D9 /* Assets.xcassets */; };
 		318165E322004A8A00FC79D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318165E122004A8A00FC79D9 /* LaunchScreen.storyboard */; };
+		318165EC22004DB700FC79D9 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318165EB22004DB700FC79D9 /* UserPost.swift */; };
+		318165EE22004F0D00FC79D9 /* PostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318165ED22004F0D00FC79D9 /* PostParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		318165DF22004A8A00FC79D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		318165E222004A8A00FC79D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318165E422004A8A00FC79D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318165EB22004DB700FC79D9 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		318165ED22004F0D00FC79D9 /* PostParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		318165D722004A8800FC79D9 /* RestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				318165EA22004D7F00FC79D9 /* model */,
 				318165D822004A8800FC79D9 /* AppDelegate.swift */,
 				318165DA22004A8800FC79D9 /* ViewController.swift */,
 				318165DC22004A8800FC79D9 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				318165E422004A8A00FC79D9 /* Info.plist */,
 			);
 			path = RestDemo;
+			sourceTree = "<group>";
+		};
+		318165EA22004D7F00FC79D9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				318165EB22004DB700FC79D9 /* UserPost.swift */,
+				318165ED22004F0D00FC79D9 /* PostParser.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				318165DB22004A8800FC79D9 /* ViewController.swift in Sources */,
 				318165D922004A8800FC79D9 /* AppDelegate.swift in Sources */,
+				318165EE22004F0D00FC79D9 /* PostParser.swift in Sources */,
+				318165EC22004DB700FC79D9 /* UserPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.RestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.ehb.RestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
